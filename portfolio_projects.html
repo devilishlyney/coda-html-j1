@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=BBH+Sans+Bogle&family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">        <meta charset="utf-8">
+
         <meta charset="utf-8">
         <title>Mes projets</title>
-        <h1 style="text-align:center;">Mes projets</h1>
-        <a href="portfolio_homepage.html">Retour à l'accueil</a><br/>
+        <link href="style.css" rel="stylesheet">
+        
     </head>
     <body>
-        <p>
-            Dans le cadre de mes cours, j'ai eu l'occasion de créer divers projets.<br/>En voici une présentation :
-        </p>
-        <h2>Le numéro magique</h2>
-        <p>
-            Le principe est simple. L'ordinateur choisit au hasard un numéro entre 1 et 100.<br/>
-            <img src="assets/p1_screen.png" alt="Numéro magique"/><br/>
-            L'utilisateur doit essayer de deviner ce numéro, et à chaque essai, l'ordinateur dit si le numéro est inférieur ou supérieur.<br/>
-            <a href="https://github.com/devilishlyney/coda-bnv-projet1" target="_blank">Accéder à la page GitHub</a>
-        </p>
-        <h2>Tic Tac Toe</h2>
-        <p>
-            Il s'agit du morpion.<br/>
-            <img src="assets/p2_screen.png" alt="Morpion"/><br/>
-            L'utilisateur joue contre l'ordinateur ; chacun va choisir une case à chaque tour et il faut aligner trois symboles.<br/>
-            <a href="https://github.com/devilishlyney/coda-bnv-projet2" target="_blank">Accéder à la page GitHub</a>
-        </p>
-        <h2>Sokoban</h2>
-        <p>
-            Le but est de pousser une boîte à un objectif.<br/>
-            <img src="assets/p3_screen.png" alt="Sokoban"/><br/>
-            L'ordinateur génère une carte de jeu où il place aléatoirement le joueur, la boîte et l'objectif.<br/>
-            En utilisant les contrôles ZQSD ou WASD, le joueur doit se déplacer sur la carte et pousser la boîte à l'objectif.<br/>
-            <a href="https://github.com/devilishlyney/coda-bnv-projet3" target="_blank">Accéder à la page GitHub</a>
-        </p>
+        <h1 style="text-align:center;">Mes projets</h1>
+        <div id="fullpage">
+            <ul id="sidebar">
+                <li><a href="portfolio_homepage.html"></i>Accueil</a></li>
+                <li><a href="portfolio_biography.html">Biographie</a></li>  
+                <li><a href="portfolio_projects.html">Projets</a></li>
+                <li><a href="portfolio_contact.html">Contact</a></li>
+                
+            </ul>
+        </div>
+        <br/>
+        <div id="main_area">
+            <p>
+                Dans le cadre de mes cours, j'ai eu l'occasion de créer divers projets.<br/>En voici une présentation :
+            </p>
+            <h2>Le numéro magique</h2>
+            <p>
+                Le principe est simple. L'ordinateur choisit au hasard un numéro entre 1 et 100.<br/>
+                <img src="assets/p1_screen.png" alt="Numéro magique"/><br/>
+                L'utilisateur doit essayer de deviner ce numéro, et à chaque essai, l'ordinateur dit si le numéro est inférieur ou supérieur.<br/>
+                <a href="https://github.com/devilishlyney/coda-bnv-projet1" target="_blank">Accéder à la page GitHub</a>
+            </p>
+            <h2>Tic Tac Toe</h2>
+            <p>
+                Il s'agit du morpion.<br/>
+                <img src="assets/p2_screen.png" alt="Morpion"/><br/>
+                L'utilisateur joue contre l'ordinateur ; chacun va choisir une case à chaque tour et il faut aligner trois symboles.<br/>
+                <a href="https://github.com/devilishlyney/coda-bnv-projet2" target="_blank">Accéder à la page GitHub</a>
+            </p>
+            <h2>Sokoban</h2>
+            <p>
+                Le but est de pousser une boîte à un objectif.<br/>
+                <img src="assets/p3_screen.png" alt="Sokoban"/><br/>
+                L'ordinateur génère une carte de jeu où il place aléatoirement le joueur, la boîte et l'objectif.<br/>
+                En utilisant les contrôles ZQSD ou WASD, le joueur doit se déplacer sur la carte et pousser la boîte à l'objectif.<br/>
+                <a href="https://github.com/devilishlyney/coda-bnv-projet3" target="_blank">Accéder à la page GitHub</a>
+            </p>
+        </div>
     </body>
 </html>
