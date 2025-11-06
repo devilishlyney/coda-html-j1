@@ -1,5 +1,6 @@
 body{
-    background-color: #000000;
+    
+    background-image: radial-gradient(farthest-corner at bottom,#111129, #000000);
 }
 
 h1 {
@@ -12,11 +13,66 @@ h1 {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    margin-top: 150px;
+    margin-top: 100px;
     font-size: 130px;
+    margin-left: 200px;
 }
 
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    background-image: linear-gradient(to bottom right, #000000, #0000cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 3px;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
 
+h3 {
+    font-size: 25px;
+    font-family: "Bebas Neue", sans-serif;
+    opacity: 0.4;
+    margin-top: 2px;
+    text-decoration-line: overline;
+}
+
+.project {
+    border-color: rgb(0, 0, 204, 0.2);
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    text-align: center;
+    margin: 1rem;
+    transition: all 0.15s;
+}
+
+.project:hover {
+    transform: scale(102%);
+    transition: transform 0.3s;
+}
+
+.project-image {
+    margin: 1rem;
+    border-style: solid;
+    border-image: linear-gradient(0deg, 
+      rgb(0, 0, 0, 0.2), 
+      rgb(0, 0, 204, 0.2)
+    ) 1 49%;
+    border-width: 1rem;
+    transition: all 1s;
+}
+
+.project-image:hover {
+    border-image: linear-gradient(180deg, 
+      rgb(0, 0, 0, 0.2), 
+      rgb(0, 0, 204, 0.2)
+    ) 1 49%;
+    transform: scale(110%);
+    transition: all 1s;
+}
 
 
 #portrait {
@@ -30,8 +86,6 @@ h1 {
     transition: transform 1s;
 }
 
-
-
 * {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -42,18 +96,32 @@ h1 {
 
 #sidebar {
     padding-left: 10px;
+    padding-right: 30px;
     text-align: center;
     position: fixed;
     bottom: 0;
     left: 0;
     top: 0;
     list-style-type: none;
-    background-color: #000000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: linear-gradient(to right, #000000, transparent);
     text-decoration: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
+
+#my_info {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 li a {
     
@@ -69,6 +137,7 @@ li a {
     opacity: 0.6;
     border-width: 2px;
     border-radius: 10px;
+    transition: all 0.15s;
 }
 
 li a:hover {
