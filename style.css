@@ -114,9 +114,12 @@ h3 {
 }
 
 #my_info {
-    position: fixed;
-    bottom: 0;
-    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#user_info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,6 +154,14 @@ li a:hover {
 #fullpage {
     display: flex;
     flex-direction: row;
+}
+
+#main_area_contact {
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 #main_area {
